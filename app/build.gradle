@@ -1,0 +1,22 @@
+plugins {
+    id("com.android.application")
+}
+
+android {
+    namespace = "nl.reisblik.htmlfotolezer"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "nl.reisblik.htmlfotolezer"
+        minSdk = 23
+        targetSdk = 35
+        versionCode = 4
+        versionName = "0.4"
+    }
+
+    sourceSets {
+        getByName("main") {
+            java.srcDirs("src")
+        }
+    }
+}
